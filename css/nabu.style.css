@@ -245,3 +245,13 @@ footer:hover { width: 96px; opacity: 1; }
 	header #logo-2,
 	header #logo-3 { background-image: url('../img/brenndel-crystal-logo-x2.png'); background-size: 305px 292px; }
 }
+
+
+
+
+
+
+
+/*TEMPORARY*/
+
+#page-4 .block li:first-child { display: none; };
