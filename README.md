@@ -1,14 +1,15 @@
 # brenndel.com
 
 #### What
-The [website](http://brenndel.com/) of a custom crystal glass distrubutors in Belgium (built in 2013)
+The [website](http://brenndel.com/) of a custom crystal glass distrubutors in Belgium. Built in 2013.
 
 #### Built with
-* Grunt
-* Handlebars
-* SASS
+* HTML5
+* CSS3
+* Javascript
 * jQuery
 * Photoshop
+* Illustrator
 
 #### Setup
 Requirements: Git, Node, Grunt
