@@ -15,7 +15,7 @@ Requirements: Git, Node, Grunt
 
 Clone repo, build dist and run server:
 
-1. `cd to/your/folder/`
-2. `git clone https://github.com/janwerkhoven/tandarts-bakker.nl.git .`
+1. `cd to/empty/folder/`
+2. `git clone git@github.com:janwerkhoven/brenndel.com.git .`
 3. `grunt`
 4. Go to http://localhost:9000/
