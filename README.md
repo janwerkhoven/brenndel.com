@@ -1,7 +1,7 @@
 # brenndel.com
 
 #### What
-The [website](http://brenndel.com/) of a custom crystal glass distrubutors in Belgium. Built in 2013. 
+The [website](http://brenndel.com/) of a custom crystal glass distrubutors in Belgium.
 
 #### Highlights
 * One-page website with aynchronous content (AJAX)
