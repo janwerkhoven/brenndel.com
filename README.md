@@ -36,7 +36,7 @@ The [website](http://brenndel.com/) of a custom crystal glass distrubutors in Be
 #### Setup
 1. Create folder and move to it: `mkdir -p ~/nabu/brenndel.com && cd $_`
 2. Clone this repo: `git clone git@github.com:janwerkhoven/brenndel.com.git .`
-3. Install NPM packages: `npm install`
+3. Install packages: `npm install`
 4. Build dist, start server and watchers: `grunt`
 5. Go to [http://localhost:9000/](http://localhost:9000/)
 6. Open code with whatever fancies your panties, I use [Atom](https://atom.io/): `atom .`
