@@ -30,7 +30,7 @@ The [website](http://brenndel.com/) of a custom crystal glass distrubutors in Be
 #### Highlights
 * One-page website with aynchronous content (AJAX)
 * Responsive design & 3D page transitions
-* Built with HTML, CSS3, JS, jQuery, Photoshop, Illustrator, Sublime & Git
+* Built with HTML, CSS3, JS, jQuery, Photoshop, Illustrator, Atom & Git
 * Launched in 2013
 
 #### Setup
