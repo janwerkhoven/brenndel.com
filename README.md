@@ -1,7 +1,7 @@
 # brenndel.com
 
 #### What
-The [website](http://brenndel.com/) of a custom crystal glass distrubutors in Belgium.
+The [website](http://brenndel.com/) of a crystal glass distributor in Belgium.
 
 #### Highlights
 * One-page website with aynchronous content (AJAX)
