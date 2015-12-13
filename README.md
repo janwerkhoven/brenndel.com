@@ -8,7 +8,7 @@ The website of a [crystal glass distributor](http://brenndel.com/) in Belgium.
 * Loads just one page `index.html`
 * The content for each route is loaded asynchronously
 * Despite popular belief, this website is **SEO-friendly** and each route can be fetched by Google bot
-* Built with [Ember CLI](http://ember-cli.com/), [Liquid Fire](https://github.com/ef4/liquid-fire), Handlebars, SASS, JS, jQuery, Photoshop, Illustrator, Atom & Git
+* Built with [Ember CLI](http://ember-cli.com/), [Liquid Fire](https://github.com/ef4/liquid-fire), Handlebars, SASS, Javascript, jQuery, Photoshop, Illustrator, Atom & Git
 * 2013: Launch of static HTML website
 * 2015: Refactor to Ember
 
