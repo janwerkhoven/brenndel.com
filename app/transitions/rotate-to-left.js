@@ -3,11 +3,12 @@ import {
 }
 from "liquid-fire";
 
-export default function rotateBelow(opts = {}) {
-  var direction = 1;
-  if (opts.direction === 'cw') {
-    direction = -1;
-  }
+export default function rotateToLeft(opts = {}) {
+  // var direction = 1;
+  // if (opts.direction === 'cw') {
+  //   direction = -1;
+  // }
+  var direction = -1;
   stop(this.oldElement);
   if (this.oldElement) {
     this.oldElement.css('transform-origin', '50% 150%');

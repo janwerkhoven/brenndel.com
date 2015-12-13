@@ -1,7 +1,7 @@
 {
   "name": "brenndel",
-  "version": "0.0.0",
-  "description": "Small description for brenndel goes here",
+  "version": "1.0.0",
+  "description": "The website of a crystal distributor in Belgium",
   "private": true,
   "directories": {
     "doc": "doc",

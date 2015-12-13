@@ -63,7 +63,8 @@ dl {
 }
 header {
   height: 350px;
-  &.compact {
+  transition: all 700ms ease;
+  .index & {
     height: 210px;
     #logo-1 {
       left: 20px;
@@ -79,45 +80,39 @@ header {
       top: 120px;
     }
   }
-  &.animated {
-    transition: all 700ms ease;
-    #logo-1 {
+  .inner {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    #logo-1,
+    #logo-2,
+    #logo-3 {
+      position: absolute;
+      left: 480px;
+      background: url(img/brenndel-crystal-logo.png) no-repeat;
       transition: all 700ms ease;
+    }
+    #logo-1 {
+      width: 170px;
+      height: 170px;
+      top: 40px;
+      margin-left: -85px;
+      background-position: 50% 0;
     }
     #logo-2 {
-      transition: all 700ms ease;
+      width: 306px;
+      height: 52px;
+      top: 212px;
+      margin-left: -153px;
+      background-position: 50% -182px;
     }
     #logo-3 {
-      transition: all 700ms ease;
+      width: 102px;
+      height: 40px;
+      top: 273px;
+      margin-left: -51px;
+      background-position: 50% -252px;
     }
-  }
-  #logo-1,
-  #logo-2,
-  #logo-3 {
-    position: absolute;
-    left: 480px;
-    background: url(img/brenndel-crystal-logo.png) no-repeat;
-  }
-  #logo-1 {
-    width: 170px;
-    height: 170px;
-    top: 40px;
-    margin-left: -85px;
-    background-position: 50% 0;
-  }
-  #logo-2 {
-    width: 306px;
-    height: 52px;
-    top: 212px;
-    margin-left: -153px;
-    background-position: 50% -182px;
-  }
-  #logo-3 {
-    width: 102px;
-    height: 40px;
-    top: 273px;
-    margin-left: -51px;
-    background-position: 50% -252px;
   }
 }
 nav {
@@ -149,18 +144,25 @@ nav {
 }
 main {
   section {
+    position: absolute !important;
+    width: 100%;
+    padding-bottom: 220px;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
     position: relative;
     display: block;
     margin-bottom: 200px;
-    // perspective: 1200px;
+    perspective: 1200px;
     .inner {
       position: relative;
       max-width: 1000px;
       margin: 0 auto;
-      // @include clearfix;
+      @include clearfix;
       >div {
-        // float: left;
-        // width: 313px;
+        float: left;
+        width: 313px;
         margin: 10px;
         background-color: #FFF;
         background-color: rgba(256, 256, 256, 0.93);
@@ -238,21 +240,6 @@ main {
           text-align: center;
           margin-bottom: 30px;
         }
-      }
-    }
-    .page {
-      display: none;
-      position: absolute !important;
-      width: 100%;
-      padding-bottom: 220px;
-      visibility: hidden;
-      backface-visibility: hidden;
-      transform: translate3d(0, 0, 0);
-      transform-style: preserve-3d;
-      &.current {
-        display: block;
-        visibility: visible;
-        z-index: 1;
       }
     }
   }
