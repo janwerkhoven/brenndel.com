@@ -1,7 +1,7 @@
 # brenndel.com
 
 #### What
-The [website](http://brenndel.com/) of a crystal glass distributor in Belgium.
+The website of a [crystal glass distributor](http://brenndel.com/) in Belgium.
 
 #### Highlights
 * 100% Ember website
