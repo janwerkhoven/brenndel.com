@@ -1,0 +1,43 @@
+<header>
+  <div class="inner">
+    {{#link-to 'index'}}
+      <div id="logo-1"></div>
+      <div id="logo-2"></div>
+      <div id="logo-3"></div>
+    {{/link-to}}
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li>
+      {{#link-to 'about'}}ABOUT US{{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'quality'}}QUALITY{{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'tailored'}}TAILORED{{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'crystal'}}CRYSTAL{{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'contact'}}CONTACT{{/link-to}}
+    </li>
+  </ul>
+</nav>
+
+<main>
+  {{outlet}}
+</main>
+
+<footer>
+  <a href="http://nabu.io" title="Nabu Websites" target="_blank">
+    <img src="assets/img/nabu-websites-logo.png" width="96 " height="35" alt="Nabu Websites logo" />
+  </a>
+</footer>
+
+<div id="background">
+  <div id="background-line-1"></div>
+</div>

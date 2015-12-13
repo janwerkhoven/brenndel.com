@@ -1,41 +1,28 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+/tmp
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
+# dependencies
+/node_modules
+/bower_components
+/dist
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
 
-# SFTP #
-######################
-sftp-config.json
+/node_modules
+npm-debug.log
+tmp*
+_posts
+_site
+common-tmp
+*.tgz
+/docs/build
+.node_modules-tmp
+.bower_components-tmp
+/coverage
