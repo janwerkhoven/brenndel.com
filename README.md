@@ -1,20 +1,23 @@
 # brenndel.com
 
 #### What
-The [website](http://brenndel.com/) of a crystal glass distributor in Belgium.
+The website of a [crystal glass distributor](http://brenndel.com/) in Belgium.
 
 #### Highlights
-* One-page website with aynchronous content (AJAX)
-* Responsive design & 3D page transitions
-* Built with HTML, CSS3, JS, jQuery, Photoshop, Illustrator, Atom & Git
-* Launched in 2013
+* 100% Ember website
+* Loads just one page `index.html`
+* The content for each route is loaded asynchronously
+* Despite popular belief, this website is **SEO-friendly** and each route can be fetched by Google bot
+* Built with [Ember CLI](http://ember-cli.com/), [Liquid Fire](https://github.com/ef4/liquid-fire), Handlebars, SASS, Javascript, jQuery, Photoshop, Illustrator, Atom & Git
+* 2013: Launch of static HTML website
+* 2015: Refactor to Ember
 
 #### Setup
 1. Create folder and move to it: `mkdir -p ~/nabu/brenndel.com && cd $_`
 2. Clone this repo: `git clone git@github.com:janwerkhoven/brenndel.com.git .`
-3. Install packages: `npm install`
-4. Build dist, start server and watchers: `grunt`
-5. Go to [http://localhost:9000/](http://localhost:9000/)
+3. Install packages: `npm install;bower install`
+4. Build dist, start server and watchers: `ember s`
+5. Go to [http://localhost:4200/](http://localhost:4200/)
 6. Open code with whatever fancies your panties, I use [Atom](https://atom.io/): `atom .`
 7. Happy coding!
 
