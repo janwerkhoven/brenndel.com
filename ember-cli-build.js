@@ -15,6 +15,10 @@ module.exports = function(defaults) {
     },
     minifyJS: {
       enabled: isProductionBuild
+    },
+    autoprefixer: {
+      browsers: ['> 1%'],
+      cascade: false
     }
   });
 

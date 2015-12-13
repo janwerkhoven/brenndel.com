@@ -42,28 +42,24 @@ p {
 }
 a {
   color: #4E4E4E;
-}
-a:hover {
-  text-decoration: none;
-  color: #F79D2C;
+  &:hover {
+    text-decoration: none;
+    color: #F79D2C;
+  }
 }
 img {
+  display: block;
   margin-bottom: 25px;
   vertical-align: top;
 }
 dl {
   margin: 0 20px 20px;
-}
-dt {
-  display: inline;
-}
-dd {
-  display: inline-block;
-}
-.inner {
-  position: relative;
-  width: 960px;
-  margin: 0 auto;
+  dt {
+    display: inline;
+  }
+  dd {
+    display: inline-block;
+  }
 }
 header {
   height: 350px;
@@ -84,15 +80,15 @@ header {
     }
   }
   &.animated {
-    @include transition(all 700ms ease);
+    transition: all 700ms ease;
     #logo-1 {
-      @include transition(all 700ms ease);
+      transition: all 700ms ease;
     }
     #logo-2 {
-      @include transition(all 700ms ease);
+      transition: all 700ms ease;
     }
     #logo-3 {
-      @include transition(all 700ms ease);
+      transition: all 700ms ease;
     }
   }
   #logo-1,
@@ -129,7 +125,6 @@ nav {
   width: 100%;
   margin: 0 auto 25px;
   background-color: rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
   ul {
     margin: 0;
@@ -157,19 +152,18 @@ main {
     position: relative;
     display: block;
     margin-bottom: 200px;
-    -webkit-perspective: 1200px;
-    -moz-perspective: 1200px;
-    perspective: 1200px;
+    // perspective: 1200px;
     .inner {
+      position: relative;
       max-width: 1000px;
       margin: 0 auto;
+      // @include clearfix;
       >div {
-        float: left;
-        width: 313px;
-        margin: 0 0 10px;
+        // float: left;
+        // width: 313px;
+        margin: 10px;
         background-color: #FFF;
         background-color: rgba(256, 256, 256, 0.93);
-        -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
         box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
         &.w2 {
           width: 636px;
@@ -252,14 +246,8 @@ main {
       width: 100%;
       padding-bottom: 220px;
       visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
       backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
       transform-style: preserve-3d;
       &.current {
         display: block;
@@ -276,7 +264,7 @@ main {
   background: url(img/background.jpg) 50% 0;
   background-size: cover;
   top: 0;
-  @include transition(height 2000ms ease);
+  transition: height 2000ms ease;
   z-index: -10;
 }
 #background-line-1 {
@@ -295,7 +283,7 @@ footer {
   bottom: 4px;
   overflow: hidden;
   opacity: .3;
-  @include transition(all 600ms ease);
+  transition: all 600ms ease;
   &:hover {
     width: 96px;
     opacity: 1;
@@ -319,7 +307,6 @@ footer {
 #page-1 img,
 #page-2 img,
 #page-5 img {
-  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 #page-5 p {
@@ -426,29 +413,11 @@ all and (max-device-width: 640px) {
 }
 /* ANIMATION */
 .nabu-delay500 {
-  -webkit-animation-delay: .6s;
-  -moz-animation-delay: .6s;
   animation-delay: .6s;
 }
 .nabu-flipOutLeft {
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipOutLeft .6s both ease-in;
-  -moz-transform-origin: 50% 50%;
-  -moz-animation: flipOutLeft .6s both ease-in;
   transform-origin: 50% 50%;
   animation: flipOutLeft .6s both ease-in;
-}
-@-webkit-keyframes flipOutLeft {
-  to {
-    -webkit-transform: translateX(620px) translateZ(-100px) rotateY(65deg);
-    opacity: 0;
-  }
-}
-@-moz-keyframes flipOutLeft {
-  to {
-    -moz-transform: translateX(620px) translateZ(-100px) rotateY(65deg);
-    opacity: 0;
-  }
 }
 @keyframes flipOutLeft {
   to {
@@ -457,24 +426,8 @@ all and (max-device-width: 640px) {
   }
 }
 .nabu-flipOutRight {
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipOutRight .6s both ease-in;
-  -moz-transform-origin: 50% 50%;
-  -moz-animation: flipOutRight .6s both ease-in;
   transform-origin: 50% 50%;
   animation: flipOutRight .6s both ease-in;
-}
-@-webkit-keyframes flipOutRight {
-  to {
-    -webkit-transform: translateX(-405px) translateZ(100px) rotateY(-65deg);
-    opacity: 0;
-  }
-}
-@-moz-keyframes flipOutRight {
-  to {
-    -moz-transform: translateX(-405px) translateZ(100px) rotateY(-65deg);
-    opacity: 0;
-  }
 }
 @keyframes flipOutRight {
   to {
@@ -483,24 +436,8 @@ all and (max-device-width: 640px) {
   }
 }
 .nabu-flipInLeft {
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipInLeft .6s both ease-out;
-  -moz-transform-origin: 50% 50%;
-  -moz-animation: flipInLeft .6s both ease-out;
   transform-origin: 50% 50%;
   animation: flipInLeft .6s both ease-out;
-}
-@-webkit-keyframes flipInRight {
-  from {
-    -webkit-transform: translateX(-405px) translateZ(100px) rotateY(-65deg);
-    opacity: 0;
-  }
-}
-@-moz-keyframes flipInRight {
-  from {
-    -moz-transform: translateX(-405px) translateZ(100px) rotateY(-65deg);
-    opacity: 0;
-  }
 }
 @keyframes flipInRight {
   from {
@@ -509,24 +446,8 @@ all and (max-device-width: 640px) {
   }
 }
 .nabu-flipInRight {
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipInRight .6s both ease-out;
-  -moz-transform-origin: 50% 50%;
-  -moz-animation: flipInRight .6s both ease-out;
   transform-origin: 50% 50%;
   animation: flipInRight .6s both ease-out;
-}
-@-webkit-keyframes flipInLeft {
-  from {
-    -webkit-transform: translateX(620px) translateZ(-100px) rotateY(65deg);
-    opacity: 0;
-  }
-}
-@-moz-keyframes flipInLeft {
-  from {
-    -moz-transform: translateX(620px) translateZ(-100px) rotateY(65deg);
-    opacity: 0;
-  }
 }
 @keyframes flipInLeft {
   from {
@@ -539,8 +460,6 @@ all and (max-device-width: 640px) {
 .no-cssanimation .nabu-flipOutRight,
 .no-cssanimation .nabu-flipInLeft,
 .no-cssanimation .nabu-flipInRight {
-  -webkit-animation: none;
-  -moz-animation: none;
   animation: none;
 }
 .no-rgba nav {

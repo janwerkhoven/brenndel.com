@@ -1,0 +1,5 @@
+{
+  "liveReload": true,
+  "watcher": "node",
+  "disableAnalytics": false
+}
