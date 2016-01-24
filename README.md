@@ -19,4 +19,10 @@ The [website](http://brenndel.com/) of a crystal glass distributor in Belgium.
 7. Happy coding!
 
 #### Contact
-Feel free to get in touch on [LinkedIn](https://au.linkedin.com/pub/jan-werkhoven/10/64/b30), [GitHub](https://github.com/janwerkhoven) or <a href="mailto:jan@nabu.io">jan@nabu.io</a>.
+Get in touch on [LinkedIn](https://au.linkedin.com/pub/jan-werkhoven/10/64/b30), [GitHub](https://github.com/janwerkhoven) or <a href="mailto:jan@nabu.io">jan@nabu.io</a>.
+
+-
+
+**Jan Werkhoven**  
+Web Developer  
+& UI Designer
